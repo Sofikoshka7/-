@@ -80,3 +80,4 @@ class оценка{
 @enduml
 ```
 
+![alt text](https://github.com/Sofikoshka7/TMP/blob/main/lab2/Screenshot_2.png)
