@@ -27,7 +27,7 @@ rectangle Система {
 @enduml
 ```
 
-
+![alt text](https://github.com/Sofikoshka7/TMP/blob/main/lab2/Screenshot_1.png)
 
 ```
 @startuml
