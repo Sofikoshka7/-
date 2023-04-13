@@ -25,7 +25,7 @@ rectangle Система {
 }
 @enduml
 
-lab2/Screenshot_1.png
+https://github.com/Sofikoshka7/TMP/blob/72ff3ea7736350ffb547345598fe986f92c7f17a/lab2/Screenshot_1.png
 
 @startuml
 class заявка{
