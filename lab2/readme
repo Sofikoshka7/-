@@ -25,7 +25,7 @@ rectangle Система {
 }
 @enduml
 
-
+lab2/Screenshot_1.png
 
 @startuml
 class заявка{
