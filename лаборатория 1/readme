@@ -2,18 +2,21 @@
 
 ## Выполнила: Семёнова С.А. БИСО-03-20
 
-```plantuml
-@startuml
+```
+@startuml "Практическая работа 0"
 left to right direction
-skinparam packageStyle rect
-actor client
-actor bank
-rectangle ATM {
-  client-- (check cash)
-  client-- (withdraw cash)
-  client-- (put money on the card)
-  (withdraw cash) <- (check cash) : extends
-  bank -- (check rest)
+skinparam backgroundcolor AntiqueWhite/Gold
+rectangle Касса {
+Покупатель -- (Покупает товары)
+Покупатель -- (Забирает товары)
+(Оплачивает товары) <.. (Покупает товары)
+Продавец -- (Включает терминал)
+(Оплачивает товары) <. (Включает терминал)
+банк -- (проверить наличие средств)
+банк -- (Подтверждает покупку)
+(проверить наличие средств) <. (Оплачивает товары)
+(Подтверждает покупку) <. (проверить наличие средств)
+(Забирает товары) <. (Подтверждает покупку)
 }
 @enduml
 ```
