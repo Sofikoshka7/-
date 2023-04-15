@@ -47,6 +47,21 @@ deactivate соискатель
 ![alt text](https://github.com/Sofikoshka7/TMP/blob/main/lab2.2/Screenshot_5.png)
 
 ```
+@startuml
+left to right direction
+title Информационная  система технической экспертизы
+skinparam backgroundcolor AntiqueWhite/Gold
+database заявка
+node ПК_соискатель
+node ПК_эксперт
+node ПК_держатель
+node решение
 
+ПК_эксперт - заявка: оценивает
+ПК_соискатель - заявка: подаёт
+ПК_соискатель - решение: получает
+ПК_держатель - заявка: смотрит оценку
+ПК_держатель - решение: принимает
+@enduml
 ```
 ![alt text](https://github.com/Sofikoshka7/TMP/blob/main/lab2.2/Screenshot_6.png)
