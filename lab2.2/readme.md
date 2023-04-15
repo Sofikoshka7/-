@@ -44,4 +44,9 @@ deactivate решение
 deactivate соискатель
 @enduml
 ```
-![alt text](
+![alt text](https://github.com/Sofikoshka7/TMP/blob/main/lab2.2/Screenshot_5.png)
+
+```
+
+```
+![alt text](https://github.com/Sofikoshka7/TMP/blob/main/lab2.2/Screenshot_6.png)
