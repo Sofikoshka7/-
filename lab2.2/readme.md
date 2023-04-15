@@ -44,3 +44,4 @@ deactivate решение
 deactivate соискатель
 @enduml
 ```
+![alt text](
