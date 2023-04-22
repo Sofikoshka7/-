@@ -126,6 +126,141 @@ print("конец!")
 
 Шаблонный метод:
 ```
+from abc import ABC, abstractmethod
 
+
+class Algorithm(ABC):
+
+    def template_method(self):
+
+        self.flagstock()
+        self.draw_1()
+        self.draw_2()
+        self.draw_3()
+        self.final()
+        self.printer()
+
+    def flagstock(self):
+        print("Флагшток нарисован")
+
+    @abstractmethod
+    def draw_1(self):
+        pass
+
+    @abstractmethod
+    def draw_2(self):
+        pass
+
+    @abstractmethod
+    def draw_3(self):
+        pass
+
+    def final(self):
+        print('Флаг готов!')
+
+    def printer(self):
+        n = 50
+        print("-" * n)
+
+class colors:
+    def painwhitef(self):
+        print("белый фон нарисован")
+
+    def painredf(self):
+        print("красный фон нарисован")
+
+    def painbluef(self):
+        print("синий фон нарисован")
+
+    def painyellowf(self):
+        print("жёлтый фон нарисован")
+
+    def painwhitek(self):
+        print("белый крест нарисован")
+
+    def painbluek(self):
+        print("синий крест нарисован")
+
+    def painyellowk(self):
+        print("жёлтый крест нарисован")
+
+    def painredk(self):
+        print("красный крест нарисован")
+
+    def painwhiteo(self):
+        print("белая окантовка креста нарисована")
+
+    def painblueo(self):
+        print("синяя окантовка креста нарисована")
+
+    def painyellowo(self):
+        print("жёлтая окантовка креста нарисована")
+
+    def painredo(self):
+        print("красная окантовка креста нарисована")
+
+    def painnoo(self):
+        print("у креста нет окантовки")
+
+
+class NorwayFlag(Algorithm):
+    def draw_1(self):
+        z = colors()
+        z.painredf()
+
+    def draw_2(self):
+        z = colors()
+        z.painbluek()
+
+    def draw_3(self):
+        z = colors()
+        z.painwhiteo()
+
+    def final(self):
+        print('Флаг Норвегии готов!')
+
+class SwedenFlag(Algorithm):
+    def draw_1(self):
+        z = colors()
+        z.painbluef()
+
+    def draw_2(self):
+        z = colors()
+        z.painyellowk()
+
+    def draw_3(self):
+        z = colors()
+        z.painnoo()
+
+    def final(self):
+        print('Флаг Швеции готов!')
+
+class IslandFlag(Algorithm):
+    def draw_1(self):
+        z = colors()
+        z.painbluef()
+
+    def draw_2(self):
+        z = colors()
+        z.painredk()
+
+    def draw_3(self):
+        z = colors()
+        z.painwhiteo()
+
+    def final(self):
+        print('Флаг Исландии готов!')
+
+print("Рисуем флаг Норвегии")
+a=NorwayFlag()
+a.template_method()
+
+print("Рисуем флаг Швеции")
+b=SwedenFlag()
+b.template_method()
+
+print("Рисуем флаг Исландии")
+c=IslandFlag()
+c.template_method()
 ```
 ![alt text](https://github.com/Sofikoshka7/TMP/blob/main/lab3/Screenshot_3.png)
